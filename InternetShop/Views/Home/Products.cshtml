@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Products";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+
+            @foreach (var product in ViewBag.Products)
+            {
+
+<ul style="font-size: 32px">
+    <li>
+        <div class="screen-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="title">
+                                <a href="/Home/Products/@product.Id">@product.Name</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+
+</ul>
+            }
+
